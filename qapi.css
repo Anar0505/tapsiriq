@@ -1,0 +1,25 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.scene {
+    perspective: 1000px;
+}
+
+.door {
+    width: 100px;
+    height: 200px;
+    background-color: #8B4513;
+    position: relative;
+    transform-origin: left;
+    transition: transform 1s ease;
+}
+
+
+.door:hover {
+    transform: rotateY(-120deg);
+}
