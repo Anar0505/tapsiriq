@@ -1,6 +1,7 @@
 header {
   background-color: rgb(7, 1, 1);
 }
+
 .container {
   width: 80%;
   margin: auto;
@@ -13,30 +14,37 @@ header {
   display: flex;
   align-items: center;
 }
-.navbar > div {
+
+.navbar>div {
   color: white;
   font-size: 22px;
 }
+
 .navbar__pac {
   display: flex;
   gap: 10px;
 }
+
 .navbar__menu_button_div {
   display: none;
 }
+
 #menubutton {
   background-color: aquamarine;
   padding: 12px;
   border-radius: 5px;
 }
+
 @media only screen and (max-width: 990px) {
   .navbar__pac {
     display: none;
   }
+
   .navbar__menu_button_div {
     display: flex;
   }
 }
+
 #ilkhisse {
   background-color: #1abc9c;
 }
@@ -47,23 +55,27 @@ header {
   align-items: center;
   flex-direction: column;
 }
+
 .main__picture {
   margin: auto;
   width: 240px;
   height: 254px;
   margin: 0 0 48px;
 }
+
 .main__startboot {
   font-size: 100px;
   color: white;
   text-align: center;
 }
+
 .main__divide {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 20px 0 24px;
 }
+
 .main__divide__line {
   margin: 0 16px;
   width: 112px;
@@ -71,30 +83,36 @@ header {
   border: solid 1px white;
   background-color: white;
 }
+
 .main__divide__favicon {
   color: white;
   font-size: 33px;
 }
+
 .main__graphicyazi {
   color: white;
   font-size: 30px;
 }
+
 .portfolio {
   padding: 96px 0;
   background-color: aliceblue;
 }
+
 .portfolio__yazilar__yazi {
   margin: auto;
   text-align: center;
   font-size: 48px;
   color: black;
 }
+
 .portfolio__yazilar__divide {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 20px 0 24px;
 }
+
 .portfolio__yazilar__divide__line {
   margin: 0 16px;
   width: 112px;
@@ -102,10 +120,12 @@ header {
   border: solid 1px rgb(0, 0, 0);
   background-color: rgb(0, 0, 0);
 }
+
 .portfolio__yazilar__divide__favicon {
   color: rgb(0, 0, 0);
   font-size: 33px;
 }
+
 .portfolio__cards {
   display: grid;
   grid-template-columns: auto auto auto;
@@ -114,12 +134,22 @@ header {
   margin: 0 auto;
   place-items: center;
 }
+
 .portfolio__cards__item {
   width: 100%;
   height: 288px;
   border-radius: 5px;
   background-color: pink;
+  border-radius: 8px;
 }
+
+.portfolio__cards__item>img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
 @media only screen and (max-width: 1400px) {
   .portfolio__cards__item {
     width: 100%;
@@ -127,42 +157,50 @@ header {
     column-gap: 10px;
   }
 }
+
 @media only screen and (max-width: 1200px) {
   .portfolio__cards__item {
     width: 100%;
     height: 210px;
   }
 }
+
 @media only screen and (max-width: 990px) {
   .portfolio__cards {
     grid-template-columns: auto auto;
     width: 100%;
   }
 }
+
 @media only screen and (max-width: 600px) {
   .portfolio__cards {
     grid-template-columns: auto;
   }
+
   .portfolio__cards__item {
     width: 100%;
   }
 }
+
 .about {
   background-color: #1abc9c;
   padding: 96px 0;
 }
+
 .about__yazilar__yazi {
   margin: auto;
   text-align: center;
   font-size: 48px;
   color: rgb(255, 255, 255);
 }
+
 .about__yazilar__divide {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 20px 0 24px;
 }
+
 .about__yazilar__divide__line {
   margin: 0 16px;
   width: 112px;
@@ -170,18 +208,281 @@ header {
   border: solid 1px rgb(255, 255, 255);
   background-color: rgb(255, 255, 255);
 }
+
 .about__yazilar__divide__favicon {
   color: rgb(255, 255, 255);
   font-size: 33px;
 }
-.about__metnler{
+
+.about__metnler {
   display: flex;
   gap: 10px;
-justify-content: center;}
-.about__metnler__metn{
+  justify-content: center;
+}
+
+.about__metnler__metn {
   font-size: 20px;
   max-width: 500px;
   font-weight: 300;
   line-height: 1.5;
+  color: white;
+  margin: 0 0 16px;
+}
+
+@media only screen and (max-width: 1400px) {
+  .about__metnler__metn {
+    max-width: 440px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .about__metnler__metn {
+    max-width: 360px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .about__metnler {
+    flex-direction: column;
+
+  }
+
+  .about__metnler__metn {
+    max-width: 100%;
+  }
+}
+
+.about__button {
+  width: 231px;
+  height: 65px;
+  margin: 24px auto 0;
+}
+
+#duyme {
+  width: 100%;
+  height: 100%;
+  padding: 16px 28px;
+  font-size: 18px;
+  border: 2px solid white;
+  background-color: #1abc9c;
+  border-radius: 8px;
+  color: white;
+}
+
+.contact {
+  padding: 96px 0;
+}
+
+.contact__yazilar {
+  margin: auto;
+  text-align: center;
+  font-size: 48px;
+  color: black;
+}
+
+.contact__yazilar__divide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0 24px;
+}
+
+.contact__yazilar__divide__line {
+  margin: 0 16px;
+  width: 112px;
+  height: 4px;
+  border: solid 1px rgb(0, 0, 0);
+  background-color: rgb(0, 0, 0);
+}
+
+.contact__yazilar__divide__favicon {
+  color: rgb(0, 0, 0);
+  font-size: 33px;
+}
+
+.contact__textbox {
+  width: 720px;
+  padding: 0 12px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact__textbox__inputbox {
+  height: 88px;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 0.5px gray solid;
+}
+
+.contact__textbox__inputbox>input {
+  border: none;
+  height: 100%;
+  width: 100%;
+}
+
+.contact__textbox__inputbox>input::placeholder {
+  font-size: 20px;
+}
+
+.contact__textbox__text {
+  height: 160px;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 0.5px gray solid;
+}
+
+#contact__textbox__textareabox {
+  width: 100%;
+  height: 100%;
+  border: none;
+  font-size: 20px;
+  padding: 24px 0;
+}
+
+#contact__textbox__send {
+  background-color: #1abc9c;
+  width: 100px;
+  height: 65px;
+  border-radius: 7px;
+  border: none;
+  font-size: 18px;
+  color: white;
+}
+
+@media only screen and (max-width: 1400px) {
+  .contact__textbox {
+    width: 640px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .contact__textbox {
+    width: 610px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .contact__textbox {
+    width: 695px;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  .contact__textbox {
+    width: 516px;
+  }
+}
+
+.sonuncuhissebir {
+  background-color: #2c3e50;
+  width: 100%;
+  display: flex;
+  padding: 80px 0;
+
+}
+
+.sonuncuhisse__melumatlar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+
+.sonuncuhisse__melumatlar__box {
+  width: 33.3333%;
+  padding: 0 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.sonuncuhisse__melumatlar__box__birinci {
+  margin: 0 0 24px;
+  text-align: center;
+  color: white;
+  font-size: 24px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+.sonuncuhisse__melumatlar__box__ikinci {
+  font-size: 25px;
+  color: white;
+  text-align: center;
+  max-width: 78%;
+  margin: 0 auto;
+}
+
+.sonuncuhisse__melumatlar__box__ucuncu {
+  margin: 0 0 24px;
+  text-align: center;
+  color: white;
+  font-size: 24px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+.sonuncuhisse__melumatlar__box__dorduncu {
+  display: flex;
+  justify-content: center;
+
+}
+
+.sonuncuhisse__melumatlar__box__dorduncu__daireler {
+  width: 52px;
+  height: 52px;
+  border-radius: 100%;
+  border: white solid 2px;
+  margin: 0 4px;
+  padding: 6px 12px;
+}
+
+.sonuncuhisse__melumatlar__box__besinci {
+  margin: 0 0 24px;
+  text-align: center;
+  color: white;
+  font-size: 24px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+.sonuncuhisse__melumatlar__box__altinci {
+  font-size: 25px;
+  color: white;
+  text-align: center;
+  max-width: 78%;
+  margin: 0 auto;
+}
+
+.sonuncuhisse__melumatlar__box__altinci>a {
+  color: #1abc9c;
+}
+
+@media only screen and (max-width: 990px) {
+  .sonuncuhisse__melumatlar {
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  .boxamargin {
+    margin: 0 0 48px;
+  }
+
+  .sonuncuhisse__melumatlar__box {
+    width: 100%;
+  }
+}
+
+.copyright {
+  padding: 24px 0;
+  background-color: #1a252f;
+  text-align: center;
+  font-size: 14px;
   color: white;
 }
